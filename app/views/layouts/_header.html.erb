@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <div class="navbar-brand">
+          <%= link_to('Accueil', root_path) %>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <% if user_signed_in? %>
+              <li class="nav-item"><%= link_to('Ajouter un produit', new_product_path) %></li>
+              <li class="nav-item"><%= link_to('Mon compte', edit_user_registration_path) %></li>
+              <li class="nav-item"><%= link_to "Se déconnecter", destroy_user_session_path, :method => :delete %></li>
+            <% else %>
+              <li class="nav-item"><%= link_to('Se connecter', new_user_session_path) %></li>
+              <li class="nav-item"><%= link_to('Inscription', new_user_registration_path) %></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </nav>
