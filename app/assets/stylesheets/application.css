@@ -119,3 +119,9 @@
  .btn-secondary:focus {
    box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
  }
+
+.shop-cart {
+  background: #0000ff4d;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  margin: 45px 2px;
+}
