@@ -1,4 +1,4 @@
-https://shop-from-space.herokuapp.com/
+https://shop-v2.herokuapp.com/
 
 How to :
 * bundle install
