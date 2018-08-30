@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'dashboard/index'
   resources :line_items
   resources :carts
   root 'catalog#index'
