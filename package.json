@@ -7,5 +7,10 @@
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
-  }
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Luxilux/shop-v2",
+  "author": "Luxilux <luxinchris@hotmail.fr>",
+  "license": "MIT"
 }
