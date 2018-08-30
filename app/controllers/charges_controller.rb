@@ -6,6 +6,7 @@ class ChargesController < ApplicationController
     # Amount in cents
     @amount = 500
 
+
     customer = Stripe::Customer.create(
       :email => params[:stripeEmail],
       :source  => params[:stripeToken]
@@ -18,8 +19,17 @@ class ChargesController < ApplicationController
       :currency    => 'usd'
     )
 
-  rescue Stripe::CardError => e
-    flash[:error] = e.message
-    redirect_to new_charge_path
-  end
+    if charge.save
+        flash[:notice] = "Vous allez recevoir un mail de confiramtion!"
+        @destroy
+        session.delete(:cart_id)
+        
+      else
+        flash[:notice] = "Problème de paiement"
+
+      end
+    end
+
+
+
 end
