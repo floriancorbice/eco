@@ -5,3 +5,5 @@ How to :
 * yarn install
 * rails db:create
 * rails db:migrate
+
+admin : toto@gmail.com // totothp
