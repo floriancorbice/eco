@@ -1,4 +1,4 @@
-https://shop-v2.herokuapp.com/
+https://shop-v3.herokuapp.com/
 
 How to :
 * bundle install
@@ -6,4 +6,4 @@ How to :
 * rails db:create
 * rails db:migrate
 
-admin : toto@gmail.com // totothp
+Compte Admin : toto@gmail.com // totothp
